@@ -168,7 +168,25 @@ const Experience = () => {
       linkedin: "#",
       instagram: "#",
       image: "./vaibhav_verma.jpg",
-    }
+    },
+    {
+      name: "Shubham Tyagi",
+      role: "Web Dev Head",
+      council: "Literary Sub-Council",
+      phone: "+91 9528631007",
+      linkedin: "https://www.linkedin.com/in/shubham-tyagi-860542264/",
+      instagram: "https://www.instagram.com/arise_404_/",
+      image: "#", // Placeholder for image
+    },
+    {
+      name: "Prashant Singh",
+      role: "Web Dev Head",
+      council: "Literary Sub-Council",
+      phone: "+91 7985417276",
+      linkedin: "https://www.linkedin.com/in/prashant-singh-269050267/",
+      instagram: "https://www.instagram.com/the_red_tshirt_guy/",
+      image: "#", // Placeholder for image
+    },
   ];
   
   const TeamHeadCard = ({ member }) => (

@@ -97,12 +97,12 @@ export const navLinks = [
 
 const services = [
 
-  {
-    id: 1,
-    title: "Web Dev",
-    icon: backend,
-    data: () => renderTeamList(devTeamMembers),
-  },
+  // {
+  //   id: 1,
+  //   title: "Web Dev",
+  //   icon: backend,
+  //   data: () => renderTeamList(devTeamMembers),
+  // },
   {
     id: 2,
     title: "Magazine",
