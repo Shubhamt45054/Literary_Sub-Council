@@ -53,7 +53,7 @@ const Experience = () => {
       council: "Literary Sub-Council",
       phone: "+91 6387501988",
       image: "./prachi.jpg",
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/prachi-dwivedi-8335b7257/",
       instagram: "#"
     },
     {
@@ -61,8 +61,8 @@ const Experience = () => {
       role: "Secretary",
       council: "Literary Sub-Council",
       phone: "+91 7895621728",
-      image: "./harsh.jpg",
-      linkedin: "#",
+      image: "./harsh.png",
+      linkedin: "https://www.linkedin.com/in/harsh-kapil-96b5a82aa/",
       instagram: "#"
     },
     {
@@ -111,9 +111,9 @@ const Experience = () => {
       role: "Events Head",
       council: "Literary Sub-Council",
       phone: "+91 8005358682",
-      linkedin: "#",
+      linkedin: "https://www.linkedin.com/in/riya-chaurasia-a747b9257/",
       instagram: "#",
-      image: "./riya_chaurasiya.jpg",
+      image: "./riya_chaurasiya.png",
     },
     {
       name: "Ujjwal Yaduvanshi",

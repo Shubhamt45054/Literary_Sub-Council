@@ -34,10 +34,19 @@ function Footer() {
               {/* <a href="https://github.com/agnt17/Lit_website_2" target="_blank">
                 <FaGithub className="hover:text-blue-600 ml-4" />
               </a> */}
-              
+              <a
+                href="https://www.linkedin.com/company/literary-subcouncil-hbtu-kanpur/"
+                className="ml-4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin className="hover:text-blue-700" />
+              </a>
               <a href="https://literary-sub-council.vercel.app/" target="_blank">
                 <FaLink className=" ml-4 hover:text-emerald-600" />
               </a>
+
+
             </li>
           </ul>
         </div>
