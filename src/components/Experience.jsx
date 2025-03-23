@@ -9,6 +9,11 @@ import { SectionWrapper } from "../hoc";
 // import { RxArrowTopRight } from "react-icons/rx";
 // import { Link } from "react-router-dom";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+
 const Experience = () => {
 
   const [selectedCard, setSelectedCard] = useState(null);
@@ -266,12 +271,46 @@ const Experience = () => {
 
 
 
+{/* with button scroll */}
 
-     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-10 mb-20 mx-10">
+<div className="mt-10 mb-20 mx-10">
+  <Slider
+    {...{
+      dots: true, // Show navigation dots
+      infinite: true, // Infinite scrolling
+      speed: 500, // Transition speed
+      slidesToShow: 4, // Number of slides visible at once
+      slidesToScroll: 1, // Number of slides to scroll at a time
+      responsive: [
+        {
+          breakpoint: 1024, // For screens smaller than 1024px
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 768, // For screens smaller than 768px
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 640, // For screens smaller than 640px
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    }}
+  >
     {teamMembers.map((member, index) => (
-      <TeamMemberCard key={index} member={member} />
+      <div key={index} className="p-4">
+        <TeamMemberCard member={member} />
+      </div>
     ))}
-  </div>
+  </Slider>
+</div>
+
 
 
       <div className="flex flex-wrap justify-center items-center gap-28 mt-4">
