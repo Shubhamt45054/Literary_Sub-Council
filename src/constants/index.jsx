@@ -27,18 +27,93 @@ import {
 } from "../assets";
 
 const magazineTeamMembers = [
-  { name: "Vaibhav Verma", linkedin: "#", instagram: "#" },
-  { name: "Kishlay Tiwari", linkedin: "#", instagram: "#" },
-  { name: "Meenakshi Yadav", linkedin: "#", instagram: "#" },
-  { name: "Shobhit", linkedin: "#", instagram: "#" },
-  { name: "Shraddha Rajpoot", linkedin: "#", instagram: "#" },
-  { name: "Raj Shekhar", linkedin: "#", instagram: "#" },
-  { name: "Rishi", linkedin: "#", instagram: "#" },
-  { name: "Shruti", linkedin: "#", instagram: "#" },
-  { name: "Vanya", linkedin: "#", instagram: "#" },
-  { name: "Chinmay", linkedin: "#", instagram: "#" },
-  { name: "Aarav", linkedin: "#", instagram: "#" },
+  {
+    name: "Vaibhav Verma",
+    linkedin: "#",
+    instagram: "#",
+  },
+  {
+    name: "Kishlay Tiwari",
+    linkedin: "https://www.linkedin.com/in/kishlay-tiwari-0205kt?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram: "#",
+  },
+  {
+    name: "Meenakshi Yadav",
+    linkedin: "https://www.linkedin.com/in/meenakshi-yadav-1b702628a",
+    instagram: "#",
+  },
+  {
+    name: "Shobhit Bhaskar",
+    linkedin: "https://www.linkedin.com/in/shobhit-bhaskar-3b720b354?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram: "#",
+  },
+  {
+    name: "Shraddha Rajpoot",
+    linkedin: "https://www.linkedin.com/in/shraddha-rajpoot-7415ba212?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram: "#",
+  },
+  {
+    name: "Raj Shekhar Dixit",
+    linkedin: "https://in.linkedin.com/in/raj-shekhar-dixit-%D8%AD%D8%B6%D8%B1%D8%AA-%D9%85%D8%AE%D8%AF%D9%88%D9%85-%D8%B4%D8%A7%DB%81-%D8%A7%D8%B9%D9%84%DB%8C%D9%B0-12b642261",
+    instagram: "#",
+  },
+  {
+    name: "Rishi",
+    linkedin: "#",
+    instagram: "#",
+  },
+  {
+    name: "Shruti Mishra",
+    linkedin: "https://www.linkedin.com/in/shruti-mishra-2b0137276?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram: "#",
+  },
+  {
+    name: "Vanya Singh",
+    linkedin: "https://www.linkedin.com/in/vanya-singh-768b82326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    instagram: "#",
+  },
+  {
+    name: "Chinmay Kumar Gupta",
+    linkedin: "https://www.linkedin.com/in/chinmay-kumar-gupta-6a9104326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram: "#",
+  },
+  {
+    name: "Aarav Kumar",
+    linkedin: "https://www.linkedin.com/in/aarav-kumar-b721b2325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram: "#",
+  },
+  {
+    name: "Kanishk Singh",
+    linkedin: "https://www.linkedin.com/in/kanishka-singh-705093324?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram: "#",
+  },
+  {
+    name: "Shubham Kumar",
+    linkedin: "https://www.linkedin.com/in/shubham-baranwal-017a04327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram: "#",
+  },
+  {
+    name: "Vanshika Singh",
+    linkedin: "https://www.linkedin.com/in/vanshika-singh-978488329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram: "#",
+  },
+  {
+    name: "Rahil Raj",
+    linkedin: "https://www.linkedin.com/in/rahil-raj-a31546309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram: "#",
+  },
+  {
+    name: "Shivam Patel",
+    linkedin: "https://www.linkedin.com/in/shivam-patel-643b5a31b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram: "#",
+  },
+  {
+    name: "Yuvraj Singh",
+    linkedin: "https://www.linkedin.com/in/yuvraj-singh-74752732a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    instagram: "#",
+  },
 ];
+
 
 const devTeamMembers = [
   { name: "Shubham Tyagi", linkedin: "shubham-tyagi-860542264/", instagram: "arise_404_/" },
