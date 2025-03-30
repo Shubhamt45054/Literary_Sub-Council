@@ -51,6 +51,7 @@ const ExperienceCard = ({ feedbacks }) => (
         {feedbacks.company_name}
       </p>
 
+      {/* Date ans Time */}
       <ul className="text-fuchsia-500 text-lg mt-4 select-none  ">
         {feedbacks.time}
       </ul>
@@ -60,6 +61,18 @@ const ExperienceCard = ({ feedbacks }) => (
       >
         {feedbacks.timeDetails}
       </p>
+
+      {/* Venue */}
+      <ul className="text-fuchsia-500 text-lg mt-4 select-none  ">
+        {feedbacks.venue}
+      </ul>
+      <p
+        className="text-secondary text-[16px] font-semibold"
+        style={{ margin: 0 }}
+      >
+        {feedbacks.venueDetails}
+      </p>
+
 
       <ul className="text-fuchsia-500 text-lg mt-4 select-none  ">
         {feedbacks.heading}
@@ -253,8 +266,7 @@ const Feedbacks = () => {
           ))}
         </VerticalTimeline>
       </div>
-
-      <div className="mt-20 ml-5">
+      {/* <div className="mt-20 ml-5">
         <p className={styles.sectionHeadText}>Registration</p>
         <p className={styles.sectionSubText}>
           How to get into such Amazing Events....
@@ -301,7 +313,7 @@ const Feedbacks = () => {
           </tr>
           </tbody>
         </table>
-      </div>
+      </div> */}
 
     </>
   );

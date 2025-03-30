@@ -32,7 +32,7 @@ const Registration = () => {
           <tr>
             <td style={cellStyle}>
               <a
-                href="https://docs.google.com/forms/d/1YfcoD3sUm8mn6uzVndNwf1LmnYvAc8TvXxz8sQg8fH0/edit?ts=65fd39db"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf-jLJkz8Zd7NITYqwSbQKeiLstxfcZZgXbd96M7YtH4GD9-g/viewform?usp=header"
                 target="_blank"
                 className="hover:text-blue-600"
               >
@@ -43,7 +43,7 @@ const Registration = () => {
             </td>
             <td style={cellStyle} className="" target="_blank">
               <a
-                href="https://docs.google.com/forms/d/1mtFtuKlrlvpu4ZTa9ekXwq12zs0hqTIyT3CPRiWB3-k/edit?ts=65f05eb6"
+                // href="https://docs.google.com/forms/d/1YfcoD3sUm8mn6uzVndNwf1LmnYvAc8TvXxz8sQg8fH0/edit?ts=65fd39db"
                 target="_blank"
                 className="hover:text-blue-600"
               >

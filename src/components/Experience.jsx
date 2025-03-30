@@ -181,7 +181,7 @@ const Experience = () => {
       phone: "+91 9528631007",
       linkedin: "https://www.linkedin.com/in/shubham-tyagi-860542264/",
       instagram: "https://www.instagram.com/arise_404_/",
-      image: "#", // Placeholder for image
+      image: "./shubham.jpg", // Placeholder for image
     },
     {
       name: "Prashant Singh",
@@ -190,7 +190,7 @@ const Experience = () => {
       phone: "+91 7985417276",
       linkedin: "https://www.linkedin.com/in/prashant-singh-269050267/",
       instagram: "https://www.instagram.com/the_red_tshirt_guy/",
-      image: "#", // Placeholder for image
+      image: "./prashant_singh.jpg", // Placeholder for image
     },
   ];
   

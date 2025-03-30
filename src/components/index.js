@@ -8,6 +8,8 @@ import Works from './Works';
 import Feedbacks from './Feedbacks';
 import Contact from './Contact';
 import Government_events from './Government_events';
+import PopUp from "./PopUp";
+import Registration from "./Registration";
 
 export {
   Hero,
@@ -22,5 +24,7 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  Government_events
+  Government_events,
+  PopUp,
+  Registration
 }
