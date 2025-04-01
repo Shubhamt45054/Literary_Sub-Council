@@ -48,7 +48,7 @@ const Experience = () => {
       role: "Convener",
       council: "Literary Sub-Council",
       phone: "+91 8765123440",
-      image: "./shivani_koshta.jpg",
+      image: "./shivani_koshta.png",
       linkedin: "https://www.linkedin.com/in/shivani-koshtha-76a81523a",
       instagram: "https://www.instagram.com/koshthashivani"
     },
@@ -57,7 +57,7 @@ const Experience = () => {
       role: "Secretary",
       council: "Literary Sub-Council",
       phone: "+91 6387501988",
-      image: "./prachi.jpg",
+      image: "./prachi.png",
       linkedin: "https://www.linkedin.com/in/prachi-dwivedi-8335b7257/",
       instagram: "#"
     },
@@ -75,7 +75,7 @@ const Experience = () => {
       role: "Co-ordinator",
       council: "Literary Sub-Council",
       phone: "+91 9026511156",
-      image: "./avinash_pal.jpg",
+      image: "./avinash_pal.png",
       linkedin: "https://www.linkedin.com/in/avinash-pal-7789322a1/",
       instagram: "#"
     }
@@ -194,58 +194,99 @@ const Experience = () => {
     },
   ];
   
+
   const TeamHeadCard = ({ member }) => (
     <div className="lg:w-1/3 flex flex-col items-center">
-      <img src={member.image} className="rounded-2xl object-cover object-top w-56 h-56" alt={member.name} />
-      <h1 className="text-2xl text-center mt-12">{member.name}</h1>
-      <h3 className="text-xl text-center mt-4 text-teal-400">{member.role}</h3>
-      <h3 className="text-l text-center mt-2">{member.council}</h3>
-      <p><a href={`tel:${member.phone}`}>{member.phone}</a></p>
-
-      <div className="flex flex-row mt-3">
-      {member.linkedin !== "#" && (
-        <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="mr-4 scale-150 hover:text-blue-700 text-blue-500" />
+      {/* Profile Image with Circular Glow Effect */}
+      <div className="relative w-40 h-40 flex items-center justify-center">
+        {/* Glow Effect Only at the Edges */}
+        <div className="absolute inset-0 w-full h-full rounded-full border-[6px] border-transparent bg-gradient-to-r from-gray-700 to-gray-900 blur-md"></div>
+        {/* Circular Background */}
+        <div className="relative w-40 h-40 flex items-center justify-center overflow-hidden rounded-full border-4 border-gray-800 shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <img
+            src={member.image}
+            className="w-full h-full object-cover object-top rounded-full"
+            alt={member.name}
+          />
+        </div>
+      </div>
+  
+      {/* Member Details */}
+      <h1 className="text-2xl text-center mt-8 text-white">{member.name}</h1>
+      <h3 className="text-xl text-center mt-2 text-teal-400">{member.role}</h3>
+      <h3 className="text-l text-center mt-1 text-gray-300">{member.council}</h3>
+      <p className="mt-2 text-gray-400">
+        <a href={`tel:${member.phone}`} className="hover:text-teal-400 transition-colors">
+          {member.phone}
         </a>
-      )}
-      {member.instagram !== "#" && (
-        <a href={member.instagram} target="_blank" rel="noopener noreferrer">
-          <FaInstagram className="mr-2 scale-150 hover:text-pink-700 text-pink-500" />
-        </a>
-      )}
-    </div>
-
+      </p>
+  
+      {/* Social Media Links */}
+      <div className="flex flex-row mt-3 space-x-4">
+        {member.linkedin !== "#" && (
+          <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="text-blue-400 hover:text-blue-600 transition-colors" size={24} />
+          </a>
+        )}
+        {member.instagram !== "#" && (
+          <a href={member.instagram} target="_blank" rel="noopener noreferrer">
+            <FaInstagram className="text-pink-400 hover:text-pink-600 transition-colors" size={24} />
+          </a>
+        )}
+      </div>
     </div>
   );
   
 
   const TeamMemberCard = ({ member }) => (
-    <div className="flex flex-col items-center p-4">
-      <div className="w-40 h-40 flex items-center justify-center overflow-hidden rounded-2xl">
-      <img src={member.image} className="w-full h-full object-cover object-top" alt={member.name} />
+    <div className="flex flex-col items-center p-6 bg-gray-800 shadow-lg rounded-2xl hover:shadow-2xl transition-shadow duration-300">
+      {/* Profile Image */}
+      <div className="w-40 h-40 flex items-center justify-center overflow-hidden rounded-full border-4 border-teal-400">
+        <img
+          src={member.image}
+          className="w-full h-full object-cover object-top"
+          alt={member.name}
+        />
       </div>
-      <h1 className="text-2xl text-center mt-6">{member.name}</h1>
-      <h3 className="text-xl text-center mt-2 text-teal-400">{member.role}</h3>
-      <h3 className="text-l text-center mt-2">{member.council}</h3>
-      <p className="mt-2">
-        <a href={`tel:${member.phone}`} target="_blank" rel="noopener noreferrer">
+  
+      {/* Member Details */}
+      <h1 className="text-xl font-bold text-center mt-4 text-white">
+        {member.name}
+      </h1>
+      <h3 className="text-lg text-center mt-2 text-teal-400">{member.role}</h3>
+      <h3 className="text-sm text-center mt-1 text-gray-300">{member.council}</h3>
+      <p className="mt-2 text-gray-400">
+        <a
+          href={`tel:${member.phone}`}
+          className="hover:text-teal-400 transition-colors"
+        >
           {member.phone}
         </a>
       </p>
-
-      <div className="flex flex-row mt-3">
-      {member.linkedin !== "#" && (
-        <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="mr-4 scale-150 hover:text-blue-700 text-blue-500" />
-        </a>
-      )}
-      {member.instagram !== "#" && (
-        <a href={member.instagram} target="_blank" rel="noopener noreferrer">
-          <FaInstagram className="mr-2 scale-150 hover:text-pink-700 text-pink-500" />
-        </a>
-      )}
-    </div>
-      
+  
+      {/* Social Media Links */}
+      <div className="flex flex-row mt-4 space-x-4">
+        {member.linkedin !== "#" && (
+          <a
+            href={member.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:text-blue-600 transition-colors"
+          >
+            <FaLinkedin size={24} />
+          </a>
+        )}
+        {member.instagram !== "#" && (
+          <a
+            href={member.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-pink-400 hover:text-pink-600 transition-colors"
+          >
+            <FaInstagram size={24} />
+          </a>
+        )}
+      </div>
     </div>
   );
 
@@ -275,33 +316,33 @@ const Experience = () => {
 
 <div className="mt-10 mb-20 mx-10">
   <Slider
-    {...{
-      dots: true, // Show navigation dots
-      infinite: true, // Infinite scrolling
-      speed: 500, // Transition speed
-      slidesToShow: 4, // Number of slides visible at once
-      slidesToScroll: 1, // Number of slides to scroll at a time
-      responsive: [
-        {
-          breakpoint: 1024, // For screens smaller than 1024px
-          settings: {
-            slidesToShow: 3,
-          },
+    dots={true} // Show navigation dots
+    infinite={true} // Enable infinite scrolling
+    speed={500} // Transition speed
+    slidesToShow={4} // Number of slides visible at once
+    slidesToScroll={1} // Number of slides to scroll at a time
+    autoplay={true} // Enable autoplay
+    autoplaySpeed={1500} // Time interval between slides (in milliseconds)
+    responsive={[
+      {
+        breakpoint: 1024, // For screens smaller than 1024px
+        settings: {
+          slidesToShow: 3,
         },
-        {
-          breakpoint: 768, // For screens smaller than 768px
-          settings: {
-            slidesToShow: 2,
-          },
+      },
+      {
+        breakpoint: 768, // For screens smaller than 768px
+        settings: {
+          slidesToShow: 2,
         },
-        {
-          breakpoint: 640, // For screens smaller than 640px
-          settings: {
-            slidesToShow: 1,
-          },
+      },
+      {
+        breakpoint: 640, // For screens smaller than 640px
+        settings: {
+          slidesToShow: 1,
         },
-      ],
-    }}
+      },
+    ]}
   >
     {teamMembers.map((member, index) => (
       <div key={index} className="p-4">

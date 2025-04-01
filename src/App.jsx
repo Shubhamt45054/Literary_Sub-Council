@@ -31,7 +31,7 @@ const App = () => {
         <Government_events />
 
         {/* this is events file*/}
-        <Feedbacks />
+        <Feedbacks />        
     
         <Registration/>
 
