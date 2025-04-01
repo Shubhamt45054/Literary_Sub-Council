@@ -136,7 +136,7 @@ const Experience = () => {
       phone: "+91 8979637774",
       linkedin: "#",
       instagram: "#",
-      image: "./anas_aleem.jpg",
+      image: "./anas_aleem.png",
     },
     {
       name: "Anoop Verma",
@@ -163,7 +163,7 @@ const Experience = () => {
       phone: "+91 9336854395",
       linkedin: "#",
       instagram: "#",
-      image: "./priyanshu.jpg",
+      image: "./priyanshu.png",
     },
     {
       name: "Vaibhav Verma",
